@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflex Rush - Brain Training Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Reflex Rush</h1>
+            <p class="subtitle">Train your brain and challenge your friends!</p>
+        </header>
+        
+        <div class="game-modes">
+            <button class="mode-btn active" data-mode="click">Click Challenge</button>
+            <button class="mode-btn" data-mode="color">Color Switch</button>
+            <button class="mode-btn" data-mode="sequence">Sequence Memory</button>
+            <button class="mode-btn" data-mode="bot">Beat the Bot</button>
+        </div>
+        
+        <div class="difficulty-selector">
+            <button class="difficulty-btn active" data-difficulty="easy">Easy</button>
+            <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+            <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+        </div>
+        
+        <div class="game-area">
+            <div class="instructions">Click START to begin the challenge!</div>
+            <div class="timer">Time: 30s</div>
+            <div class="score-display">Score: 0</div>
+            <div class="target" style="display: none;">Click!</div>
+            <button class="start-btn">START</button>
+            
+            <div class="game-result">
+                <h2>Game Over!</h2>
+                <p>Your score: <span class="final-score">0</span></p>
+                <p class="bot-comparison"></p>
+                <button class="start-btn play-again">Play Again</button>
+                
+                <div class="share-btns">
+                    <button class="share-btn twitter">
+                        <span>Share on Twitter</span>
+                    </button>
+                    <button class="share-btn facebook">
+                        <span>Share on Facebook</span>
+                    </button>
+                    <button class="share-btn whatsapp">
+                        <span>Share on WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Leaderboard</h2>
+        <table class="leaderboard">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                    <th>Mode</th>
+                    <th>Difficulty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>You</td>
+                    <td>0</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>AI Bot</td>
+                    <td>25</td>
+                    <td>Click Challenge</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Friend1</td>
+                    <td>20</td>
+                    <td>Click Challenge</td>
+                    <td>Medium</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
+    <script src="script.js"></script>
+</body>
+</html>
