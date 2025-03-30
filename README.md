@@ -50,3 +50,4 @@ To create an entertaining and competitive platform that:
   - Real-time updates via WebSockets
   - Secure user authentication
   - Data persistence with MongoDB
+![image](https://github.com/user-attachments/assets/e923edc5-d8aa-4119-aa91-2acf8fcfc6ac)
